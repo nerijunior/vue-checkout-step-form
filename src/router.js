@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+
+// Pages
+import Step1Page from '@/components/pages/Step1Page.vue'
+import Step2Page from '@/components/pages/Step2Page.vue'
+import Step3Page from '@/components/pages/Step3Page.vue'
 
 Vue.use(Router)
 
@@ -10,16 +14,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'step1',
+      component: Step1Page
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/step2',
+      name: 'step2',
+      component: Step2Page
+    },
+    {
+      path: '/',
+      name: 'step3',
+      component: Step3Page
     }
   ]
 })
