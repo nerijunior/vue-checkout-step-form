@@ -8,3 +8,29 @@ body{
     font-family: Nunito;
     font-size: 12px;
 }
+
+
+.row{
+    display: flex;
+
+    .column{
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: .75rem;
+    }
+}
+
+.input, .select{
+    background: #FFFFFF;
+    border: 1px solid #DDE3E8;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 19px 23px;
+    outline: none;
+
+    &:focus{
+        border-color: #71B6EF;
+    }
+}

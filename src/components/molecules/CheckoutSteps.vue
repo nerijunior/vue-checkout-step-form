@@ -25,11 +25,17 @@ export default {
   flex-direction: row;
 
   .checkout-step{
+    flex-grow: 1;
+    text-align: center;
     padding: 34px 50px;
     border-bottom: 1px solid #D4D9DD;
 
     &.active{
       border-bottom: 1px solid black;
+    }
+
+    &:hover{
+      border-color: #9a9a9a;
     }
   }
 }

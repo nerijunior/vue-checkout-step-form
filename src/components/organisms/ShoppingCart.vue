@@ -37,7 +37,7 @@ export default {
 .shopping-cart{
   background-color: #F8FAFB;
   height: 100vh;
-  padding: 70px 50px 0;
+  padding: 0 50px 0;
 
   .cart-header{
     display: flex;
@@ -45,6 +45,7 @@ export default {
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 1px solid #E4EAEE;
+    margin-top: 70px;
 
     .title{
       font-size: 24px;

@@ -11,9 +11,14 @@ export default {
 }
 </script>
 
-<style scope>
+<style lang="scss" scope>
 .checkout-step{
+  cursor: pointer;
   font-size: 14px;
   color: black;
+
+  span{
+    margin-right: 5px;
+  }
 }
 </style>

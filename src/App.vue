@@ -33,11 +33,17 @@ export default {
   display: flex;
   flex-direction: row;
 }
+
 #content{
-  width: calc(100% - 290px);
+  width: calc(100% - 120px - 290px);
+  padding: 0 120px;
 }
 
 .shopping-cart{
   width: 290px;
+}
+
+.checkout-steps{
+  margin: 70px 0;
 }
 </style>
